@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="150"
+   height="150"
+   viewBox="0 0 39.687499 39.687501"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="icon_docx.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.3460937"
+     inkscape:cx="13.230168"
+     inkscape:cy="104.68623"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-257.31248)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#254ca0;stroke-width:1.8305738;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 28.125988,265.38828 H 16.150564 v 25.21808 H 35.159171 V 272.10465 H 30.40702 c 0,0 -1.580207,-0.22336 -1.770293,-1.61733 -0.190086,-1.39396 0,-5.06896 0,-5.06896 z"
+       inkscape:connector-curvature="0"
+       id="path4529"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="fill:#254ca0;stroke:none;stroke-width:0.35482731px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 30.046991,264.50025 v 6.00371 l 6.093305,0.0448 z"
+       id="path4531"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="opacity:1;fill:#254ca0;fill-opacity:1;stroke:none;stroke-width:1.84642327;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4533"
+       width="28.943201"
+       height="10.48407"
+       x="2.80633"
+       y="-287.12613"
+       ry="0.69602036"
+       transform="scale(1,-1)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.62599754px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Bold';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1906538"
+       x="5.0191293"
+       y="-279.30374"
+       id="text4539"
+       transform="scale(1,-1)"><tspan
+         sodipodi:role="line"
+         id="tspan4537"
+         x="5.0191293"
+         y="-279.30374"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.62599754px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Bold';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke-width:0.1906538">DOCX</tspan></text>
+  </g>
+</svg>
