@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class TaskStatusTableSeeder extends Seeder
 {
@@ -11,11 +12,14 @@ class TaskStatusTableSeeder extends Seeder
      */
     public function run()
     {
-      Role::truncate();
-      Role::create(['state'=>'processing']);
-      Role::create(['state'=>'followup']);
-      Role::create(['state'=>'stuck or pending']);
-      Role::create(['state'=>'negotiating']);
-      Role::create(['state'=>'done']);
+
+      DB::table('taskstatus')->insert([
+        ['state'=>'processing'],
+        ['state'=>'followup'],
+        ['state'=>'stuck or pending'],
+        ['state'=>'negotiating'],
+        ['state'=>'done']
+    ]);
+
     }
 }

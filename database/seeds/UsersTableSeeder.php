@@ -13,7 +13,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        User::truncate();
+        //User::truncate();
 
         $superAdminRole = Role::where('name','superadmin')->first();
         $adminRole = Role::where('name','admin')->first();
