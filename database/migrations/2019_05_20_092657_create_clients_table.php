@@ -22,6 +22,7 @@ class CreateClientsTable extends Migration
             $table->string('email', 100);
             $table->string('contactno',30);
             $table->string('cperson',100);
+            $table->unsignedBigInteger('parentID');
             $table->unsignedBigInteger('encodedby');
             $table->timestamps();
             $table->foreign('encodedby')->references('id')->on('users');

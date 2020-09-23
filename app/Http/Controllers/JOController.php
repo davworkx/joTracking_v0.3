@@ -353,7 +353,8 @@ class JOController extends Controller
               [
               'joid' => $request->joid, 
               'userid' => Auth::user()->id,
-              'note' => $request->note
+              'note' => $request->note,
+              'datecreated' => now()
               ]
             );
 
