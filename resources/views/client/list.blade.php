@@ -243,7 +243,7 @@ function format ( d ) {
           branch += '<tr><td>'+datab[i].clientname+'</td><td>'+datab[i].busadd+'</td><td>'+datab[i].tin+
           '</td><td>'+datab[i].businessID+'</td><td>'+datab[i].RDO+'</td><td>'+datab[i].tax_class+'</td><td>'+datab[i].tax_type+
           '</td><td>'+datab[i].cperson+'</td><td>'+datab[i].contactno+'</td><td><a href="{{url("client")}}/'+datab[i].id+'" target="_blank">Details</a>'+
-          ' | <a href="{{url("client/view")}}/'+datab[i].id+'" target="_blank">JOs</a> | <a href="{{url("jo/create?cid=")}}'+datab[i].id+'" target="_blank">CreateJO</a></td></tr>';
+          ' | <a href="{{url("jo/view")}}/'+datab[i].id+'" target="_blank">JOs</a> | <a href="{{url("jo/create?cid=")}}'+datab[i].id+'" target="_blank">CreateJO</a></td></tr>';
         }
 
         $("#nav-details-"+d.id).append(
