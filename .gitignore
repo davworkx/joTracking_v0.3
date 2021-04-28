@@ -13,3 +13,4 @@ yarn-error.log
 .env.example
 crm.sql
 views.txt
+*.zip
