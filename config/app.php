@@ -179,6 +179,8 @@ return [
         Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
         App\Providers\GoogleDriveServiceProvider::class,
 
+        Superbalist\LaravelGoogleCloudStorage\GoogleCloudStorageServiceProvider::class,
+
     ],
 
     /*

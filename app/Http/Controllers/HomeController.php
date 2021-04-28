@@ -14,6 +14,7 @@ use App\Message;
 use App\Client;
 use App\Joborder;
 use App\Task;
+use App\Agency;
 
 class HomeController extends Controller
 {
@@ -130,15 +131,6 @@ class HomeController extends Controller
       return view('emails.index');
     }
 
-    public function openDataAdministration(Request $request)
-    {
-      if(($request->user()->hasAnyRole('superadmin')) OR ($request->user()->hasAnyRole('admin'))){
-        return view('data.index');
-      }else{
-        return view('home');
-      }
-        
-    }
 }
 //https://www.tutsmake.com/laravel-5-8-new-email-verification/?fbclid=IwAR2DMTYNdPoWnZDec_grgL-M2MJkOcLWKkWn45p-inro3O0AZI2aCuxinWk
 

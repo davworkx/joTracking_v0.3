@@ -154,7 +154,7 @@
                       @csrf
                         <div class="form-group row">
                               <label for="lname" class="col-sm-3 text-right control-label col-form-label">Applicable Date</label>
-                              <div class="col-sm-9">
+                              <div class="col-sm-9 col-md-6 col-lg-3">
                                   <input type="date" class="form-control" id="applicableDate" name="applicableDate" value="" >
                               </div>
                           </div>

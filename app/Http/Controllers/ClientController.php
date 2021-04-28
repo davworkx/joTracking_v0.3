@@ -257,7 +257,7 @@ class ClientController extends Controller
      }
      $dataID = DB::table('client_files')
             ->insertGetId(
-            ['clientID' => $request->cid, 'applicableDate'=>$request->applicableDate, 'formID'=>$request->formTypeID, 'filetype'=>$file_ext, 'locationReference'=>$new_name, 'isDeleted'=>'0' , 'uploadedby'=>Auth::user()->id, $ins_upd=> $cur_datetime ]
+            ['clientID' => $request->cid, 'applicableDate'=>$request->applicableDate, 'formID'=>$request->formTypeID, 'filetype'=>$file_ext, 'locationReference'=>$new_name, 'isDeleted'=>0, 'uploadedby'=>Auth::user()->id, $ins_upd=> $cur_datetime ]
         );
       //$data = DB::table('client_files')->where(['id'=>$dataID])->get();
       $data = DB::select("SELECT cf.id, cf.applicableDate, (SELECT f.code FROM forms as f WHERE f.id=cf.formID) as formCode,(SELECT f.description FROM forms as f WHERE f.id=cf.formID) as formDescription,(SELECT (SELECT a.code FROM agencies as a WHERE f.agencyID = a.id) as agencyCode FROM forms as f WHERE f.id=cf.formID) as agencies, cf.locationReference,cf.filetype FROM client_files as cf WHERE cf.id=$dataID and cf.isDeleted=0 Order By cf.applicableDate DESC");
@@ -269,23 +269,23 @@ class ClientController extends Controller
       $fileData = File::get($filePath);
       $dir = '/';
       $recursive = false; // Get subdirectories also?
-      $contents = collect(Storage::cloud()->listContents($dir, $recursive));
+      //$contents = collect(Storage::cloud()->listContents($dir, $recursive));
   
-      $dir = $contents->where('type', '=', 'dir')
-          ->where('filename', '=', $folder)
-          ->first(); // There could be duplicate directory names!
+      //$dir = $contents->where('type', '=', 'dir')
+       //   ->where('filename', '=', $folder)
+       //   ->first(); // There could be duplicate directory names!
   
-      if ( ! $dir) {
-        Storage::cloud()->makeDirectory($folder);
+      //if ( ! $dir) {
+      //  Storage::cloud()->makeDirectory($folder);
 
-      }
-      $contents = collect(Storage::cloud()->listContents($dir, $recursive));
-      $dir = $contents->where('type', '=', 'dir')
-            ->where('filename', '=', $folder)
-            ->first();
+     //}
+      //$contents = collect(Storage::cloud()->listContents($dir, $recursive));
+      //$dir = $contents->where('type', '=', 'dir')
+       //     ->where('filename', '=', $folder)
+       //     ->first();
   
       // Storage::cloud()->put($dir['path'].'/test.txt', 'Hello World');
-      $gdata = Storage::cloud()->put($dir['path'].'/'.$filename, $fileData);
+      //$gdata = Storage::cloud()->put($dir['path'].'/'.$filename, $fileData);
 
       $output = array(
         'success' => 'File uploaded successfully',

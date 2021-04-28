@@ -75,7 +75,11 @@ Route::get('/billing/view/{cid}', 'BillingController@viewbilling');
 Route::post('/billing/search', 'BillingController@search');
 
 Route::get('webmail','HomeController@openWebmail');
-Route::get('data','HomeController@openDataAdministration');
+Route::get('data','DataController@openDataAdministration');
+Route::post('data/agency','DataController@addUpdateAgency');
+Route::post('data/form','DataController@addUpdateForm');
+Route::get('data/dfiles','DataController@getDeletedFiles');
+
 
 Route::get('generate-pdf','PDFController@generatePDF');
 
