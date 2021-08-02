@@ -354,6 +354,7 @@
 
 
 <script>
+let isSaved = false;
 // console.log($( "#cid" ).val());
 // var isUpdate = false;
 // var areYouReallySure = false;
@@ -361,8 +362,16 @@
 $(".select2").select2();
 $(document).ready(function() {
 
-    $(window).on('beforeunload',function(){
-      return '';
+    $(window).on('beforeunload',function(e){
+        
+        e.preventDefault();
+        if(isSaved == true)
+        {
+            delete e['returnValue'];
+        }
+        else{
+            e.returnValue = '';
+        }
     });
     
     $('#formTypeID').find('option').remove();
@@ -408,10 +417,12 @@ $(document).ready(function() {
     /****************************************
      *       Basic Table                   *
      ****************************************/
+
     $('#zero_config').DataTable();
 
         var isEdit = false;
         $("#editBtn").click(function(){
+            isSaved = false;
             if(isEdit){
                 $("#editBtn").html('<i class="fas fa-edit"></i> Edit Info');
                 $( "#clientname" ).prop( "disabled", isEdit );
@@ -467,10 +478,12 @@ $(document).ready(function() {
                 },
                 success: function(data){
                     console.log("Data saved." , data);
+                    isSaved = true;
                 },
                 error:function(data)
                 {
                     console.log(data);
+                    isSaved = false;
                 }
                 });
 
